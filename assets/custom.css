@@ -1,1 +1,14 @@
 /* Place custom css here. */
+.katex-display {
+    min-height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media (max-aspect-ratio: 2400/1850) {
+    .katex-display::-webkit-scrollbar {
+        display: none;
+        /*在移动端不显示横向滚动条*/
+    }
+}
